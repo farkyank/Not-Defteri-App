@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardViewContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/color1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Başlık"
+            android:fontFamily="@font/bold"
+            android:textSize="13sp"
+            android:textColor="@color/colorBlack">
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/view_background"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+        </View>
+        <ImageView
+            android:id="@+id/imageNoteImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"></ImageView>
+
+        <TextView
+            android:id="@+id/textNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Not Metin"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/colorBlack">
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/view_background"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+        </View>
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="Tarih"
+            android:fontFamily="@font/light"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
